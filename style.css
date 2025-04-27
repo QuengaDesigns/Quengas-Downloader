@@ -15,7 +15,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header without sticky navigation */
+/* Header */
 header {
     background-color: #ffffff; /* Light background for header */
     color: #333333; /* Dark text for header */
@@ -24,7 +24,6 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Removed sticky properties */
 }
 
 header .logo {
@@ -62,6 +61,22 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #f39c12;
+}
+
+/* Sign Up Button */
+.signup-btn {
+    background-color: #e74c3c; /* Red accent color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.signup-btn:hover {
+    background-color: #f39c12;
 }
 
 /* Main Section Styles */
@@ -195,6 +210,3 @@ footer a:hover {
     }
 
     .category-item {
-        padding: 15px;
-    }
-}
