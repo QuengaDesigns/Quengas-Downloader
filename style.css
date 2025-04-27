@@ -10,13 +10,15 @@ body {
     justify-content: space-between;
 }
 .logo-text {
-    font-size: 2.2em;
+    font-size: 1.7em; /* Match h1 font size */
     font-weight: bold;
-    color: #0074d9;
+    color: #e74c3c;
     background: #fff;
     border-radius: 8px;
-    width: 48px;
-    height: 48px;
+    width: 1.7em;
+    height: 1.7em;
+    min-width: 48px;
+    min-height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,10 +41,23 @@ body {
     text-decoration: none;
     font-weight: 500;
     font-size: 1em;
-    transition: color 0.2s;
+    transition: color 0.2s, background 0.2s;
+    padding: 0.4em 1em;
+    border-radius: 6px;
 }
 .navbar a:hover {
     color: #0074d9;
+}
+.navbar a.signup {
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 18px;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+.navbar a.signup:hover {
+    background: #c0392b;
+    color: #fff;
 }
 ul {
     list-style: none;
