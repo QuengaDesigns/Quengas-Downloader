@@ -34,13 +34,14 @@ header .logo {
     font-weight: 700;
     color: #e74c3c; /* Red accent color for logo */
     letter-spacing: 1px;
+    margin-right: 10px; /* Reduced margin to bring the logo and title closer */
 }
 
 header h1 {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-left: 10px;
+    margin-left: 0; /* Removed the left margin to make it closer to the logo */
 }
 
 nav ul {
