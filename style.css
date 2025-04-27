@@ -7,15 +7,42 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 1.5em;
+    justify-content: space-between;
 }
-.logo {
+.logo-text {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #0074d9;
+    background: #fff;
+    border-radius: 8px;
     width: 48px;
     height: 48px;
-    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.7em;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
 }
-h1 {
+.header h1 {
     color: #333;
     margin: 0;
+    font-size: 1.7em;
+    margin-right: 2em;
+}
+.navbar {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5em;
+}
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    transition: color 0.2s;
+}
+.navbar a:hover {
+    color: #0074d9;
 }
 ul {
     list-style: none;
