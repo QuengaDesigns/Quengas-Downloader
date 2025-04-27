@@ -10,20 +10,20 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #181818; /* Dark background color */
-    color: #f1f1f1; /* Light text color for readability */
+    background-color: #f4f4f9; /* Light background color */
+    color: #333333; /* Dark text color for readability */
     line-height: 1.6;
 }
 
 /* Header with sticky navigation */
 header {
-    background-color: #2b2b2b;
-    color: white;
+    background-color: #ffffff; /* Light background for header */
+    color: #333333; /* Dark text for header */
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -32,7 +32,7 @@ header {
 header .logo {
     font-size: 30px;
     font-weight: 700;
-    color: #e74c3c;
+    color: #e74c3c; /* Red accent color for logo */
     letter-spacing: 1px;
 }
 
@@ -69,9 +69,9 @@ nav ul li a:hover {
 section {
     padding: 40px 20px;
     margin: 20px;
-    background-color: #2b2b2b;
+    background-color: #ffffff; /* White background for sections */
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Grid for Categories (Emulators, Games, Tools) */
@@ -82,11 +82,11 @@ section {
 }
 
 .category-item {
-    background-color: #333333;
+    background-color: #f0f0f0; /* Light background for category items */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .category-item h3 {
@@ -96,7 +96,7 @@ section {
 }
 
 .category-item p {
-    color: #ccc;
+    color: #333;
     font-size: 16px;
 }
 
@@ -107,7 +107,7 @@ section {
 
 /* Buttons */
 button {
-    background-color: #e74c3c;
+    background-color: #e74c3c; /* Red accent color */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -126,8 +126,8 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2b2b2b;
-    color: #bbb;
+    background-color: #ffffff;
+    color: #333333;
     margin-top: 40px;
 }
 
