@@ -15,7 +15,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header with sticky navigation */
+/* Header without sticky navigation */
 header {
     background-color: #ffffff; /* Light background for header */
     color: #333333; /* Dark text for header */
@@ -24,9 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    /* Removed sticky properties */
 }
 
 header .logo {
