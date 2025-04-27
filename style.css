@@ -48,6 +48,12 @@ header .logo {
     letter-spacing: 1px;
 }
 
+#main-header .logo-title-container {
+    display: flex;
+    align-items: center; /* Align logo and title vertically */
+    gap: 1rem; /* Add spacing between the logo and title */
+}
+
 /* Navigation */
 nav ul {
     display: flex;
