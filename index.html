@@ -2,79 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quenga's Downloader</title>
+    <title>Quengas Downloader</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <!-- Logo and Title Container -->
-        <div class="logo-title-container">
-            <img src="logo.png" alt="Quenga's Logo" class="logo">
-            <h1>Quenga's Downloader</h1>
-        </div>
+    <h1>Quengas Downloader</h1>
+    <p>Upload is only available on a server. For GitHub Pages, add files to the <code>/downloads</code> folder in the repo.</p>
+    <h2>Available Downloads</h2>
+    <ul id="file-list">
+        <!-- File links will be inserted here -->
+    </ul>
+    <script>
+    // List of files (manually update this array when you add new files to /downloads)
+    const files = [
+        // Example: { name: "game1.zip", url: "downloads/game1.zip" },
+        // Add your files here
+    ];
 
-        <!-- Navigation Bar -->
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="/" aria-label="Go to Home Page">Home</a></li>
-                <li><a href="/login" aria-label="Go to Login Page">Login</a></li>
-                <li><a href="/signup" class="signup-btn" aria-label="Sign Up">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content Section -->
-    <main>
-        <section aria-labelledby="welcome-heading">
-            <h2 id="welcome-heading">Welcome to Quenga's Downloader</h2>
-            <p>Browse through our collection of emulators, games, and more!</p>
-
-            <!-- Search Bar -->
-            <form class="search-container" role="search" aria-label="Search for content">
-                <label for="search" class="visually-hidden">Search</label>
-                <input type="text" id="search" name="query" placeholder="Search for emulators, games, tools..." aria-live="polite" />
-                <button type="submit" id="search-btn">Search</button>
-            </form>
-        </section>
-
-        <!-- Categories Section -->
-        <section aria-labelledby="categories-heading">
-            <h2 id="categories-heading">Categories</h2>
-            <div class="category-grid">
-                <article class="category-item" aria-labelledby="emulators-heading">
-                    <h3 id="emulators-heading">Emulators</h3>
-                    <p>Play classic games on your modern device.</p>
-                </article>
-                <article class="category-item" aria-labelledby="games-heading">
-                    <h3 id="games-heading">Games</h3>
-                    <p>Find a variety of games to download and enjoy.</p>
-                </article>
-                <article class="category-item" aria-labelledby="tools-heading">
-                    <h3 id="tools-heading">Tools</h3>
-                    <p>Download useful tools for your computer.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section aria-labelledby="cta-heading">
-            <h2 id="cta-heading" class="visually-hidden">Call to Action</h2>
-            <button onclick="location.href='/downloads'">Start Downloading</button>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Quenga's Downloader. All rights reserved.</p>
-        <nav aria-label="Footer navigation">
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-            </ul>
-        </nav>
-    </footer>
+    const fileList = document.getElementById('file-list');
+    if (files.length === 0) {
+        fileList.innerHTML = "<li>No files available yet.</li>";
+    } else {
+        files.forEach(file => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = file.url;
+            a.textContent = file.name;
+            a.download = "";
+            li.appendChild(a);
+            fileList.appendChild(li);
+        });
+    }
+    </script>
 </body>
 </html>
