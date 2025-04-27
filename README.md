@@ -7,6 +7,7 @@ Quenga's Personal Downloader is a web application designed to provide users with
 - **Search Functionality**: Easily search for content using the search bar.
 - **Categories**: Browse through categorized content such as Emulators, Games, and Tools.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Interactive Navigation**: Smooth scrolling and enhanced interactivity.
 
 ## Go to the site
 https://quengadesigns.github.io/Quengas-Downloader/

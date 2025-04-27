@@ -1,5 +1,6 @@
-/* Define CSS Variables */
-:root {
+button:focus, .signup-btn:focus, input:focus {/* Define CSS Variables */
+
+}    outline-offset: 2px;    outline: 2px solid var(--focus-color);:root {
     --primary-color: #e74c3c;
     --secondary-color: #f39c12;
     --background-light: #ffffff;
