@@ -1,5 +1,20 @@
-/* Define CSS Variables */
-:root {
+.signup-btn {/* Define CSS Variables */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}    background-color: var(--hover-color); /* Slight hover effect */    transform: translateY(-3px);.signup-btn:hover {}    transition: transform 0.2s ease, background-color 0.3s ease;    color: #fff;    background-color: var(--primary-color); /* e74c3c */    border: none;    cursor: pointer;    font-weight: 500;    border-radius: 0.5rem;    padding: 0.5rem 1rem;    font-size: 1rem;:root {
     --primary-color: #e74c3c;
     --secondary-color: #f39c12;
     --background-light: #ffffff;
