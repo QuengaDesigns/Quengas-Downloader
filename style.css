@@ -1,33 +1,5 @@
-/* Base styles *//* Define CSS Variables */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}    margin: 0; /* Remove default margin for proper alignment */#main-header h1 {}    gap: 0.5rem; /* Adjust spacing between the logo and title */    align-items: center; /* Align logo and title vertically */    display: flex;#main-header .logo-title-container {}    padding: 10px 0;    color: #fff;    background: #333;#main-header {/* Header styles */}    color: #333;    text-decoration: none;a {}    padding: 0;    margin: 0;    line-height: 1.6;    font-family: Arial, sans-serif;body {:root {
+/* Define CSS Variables */
+:root {
     --primary-color: #e74c3c;
     --secondary-color: #f39c12;
     --background-light: #ffffff;
@@ -47,6 +19,7 @@
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background-dark);
@@ -184,10 +157,16 @@ button {
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 button:hover {
     transform: translateY(-3px);
+    background-color: var(--hover-color);
 }
 
 /* Search Bar */
