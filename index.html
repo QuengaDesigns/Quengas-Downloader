@@ -9,27 +9,25 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header id="main-header">
         <!-- Logo and Title Container -->
         <div class="logo-title-container">
-            <div class="logo" aria-label="Quenga's Logo">
-                <span>Logo</span>
-            </div>
-            <h1>Quenga's Downloader</h1>
+            <img src="logo.png" alt="Quenga's Logo" class="logo">
+            <h1>Quenga's </h1>
         </div>
 
         <!-- Navigation Bar -->
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="/" aria-label="Go to Home Page">Home</a></li>
                 <li><a href="/login" aria-label="Go to Login Page">Login</a></li>
-                <li><a href="/signup" class="signup-btn" role="button" aria-label="Sign Up">Sign Up</a></li>
+                <li><a href="/signup" class="signup-btn" aria-label="Sign Up">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content Section -->
-    <main>
+    <main class="main-content">
         <section aria-labelledby="welcome-heading">
             <h2 id="welcome-heading">Welcome to Quenga's Downloader</h2>
             <p>Browse through our collection of emulators, games, and more!</p>
@@ -37,7 +35,7 @@
             <!-- Search Bar -->
             <form class="search-container" role="search" aria-label="Search for content">
                 <label for="search" class="visually-hidden">Search</label>
-                <input type="text" id="search" name="query" placeholder="Search for emulators, games, tools..." />
+                <input type="text" id="search" name="query" placeholder="Search for emulators, games, tools..." aria-live="polite" />
                 <button type="submit" id="search-btn">Search</button>
             </form>
         </section>
@@ -69,7 +67,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer>
+    <footer id="main-footer">
         <p>&copy; 2025 Quenga's Downloader. All rights reserved.</p>
         <nav aria-label="Footer navigation">
             <ul>
