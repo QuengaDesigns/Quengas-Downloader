@@ -2,37 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quengas Downloader</title>
+    <title>Quenga's Downloader</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Quengas Downloader</h1>
+    <header class="header">
+        <img src="logo.png" alt="Quenga Logo" class="logo">
+        <h1>Quenga's Downloader</h1>
+    </header>
     <p>Upload is only available on a server. For GitHub Pages, add files to the <code>/downloads</code> folder in the repo.</p>
-    <h2>Available Downloads</h2>
-    <ul id="file-list">
-        <!-- File links will be inserted here -->
-    </ul>
+    
+    <section>
+        <h2>Video Games by Platform</h2>
+        <ul id="games-list">
+            <!-- Example: <li><a href="downloads/game1.zip" download>Game 1 (PC)</a></li> -->
+        </ul>
+    </section>
+    <section>
+        <h2>Emulators</h2>
+        <ul id="emulators-list">
+            <!-- Example: <li><a href="downloads/emulator1.zip" download>Emulator 1</a></li> -->
+        </ul>
+    </section>
+    <section>
+        <h2>Software</h2>
+        <ul id="software-list">
+            <!-- Example: <li><a href="downloads/software1.zip" download>Software 1</a></li> -->
+        </ul>
+    </section>
+    <!-- Add more categories as needed -->
     <script>
-    // List of files (manually update this array when you add new files to /downloads)
-    const files = [
-        // Example: { name: "game1.zip", url: "downloads/game1.zip" },
-        // Add your files here
-    ];
-
-    const fileList = document.getElementById('file-list');
-    if (files.length === 0) {
-        fileList.innerHTML = "<li>No files available yet.</li>";
-    } else {
-        files.forEach(file => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = file.url;
-            a.textContent = file.name;
-            a.download = "";
-            li.appendChild(a);
-            fileList.appendChild(li);
-        });
-    }
+    // Example: populate lists if you want to automate
+    // const games = [ { name: "Game 1 (PC)", url: "downloads/game1.zip" } ];
+    // const emulators = [ { name: "Emulator 1", url: "downloads/emulator1.zip" } ];
+    // const software = [ { name: "Software 1", url: "downloads/software1.zip" } ];
+    // ...populate lists as needed...
     </script>
 </body>
 </html>
