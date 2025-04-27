@@ -12,7 +12,7 @@
     <header>
         <!-- Logo and Title Container -->
         <div class="logo-title-container">
-            <div class="logo">
+            <div class="logo" aria-label="Quenga's Logo">
                 <span>Logo</span>
             </div>
             <h1>Quenga's Downloader</h1>
@@ -21,48 +21,62 @@
         <!-- Navigation Bar -->
         <nav>
             <ul>
-                <li><a href="/">Home</a></li> <!-- Changed to a real link -->
-                <li><a href="/login">Login</a></li> <!-- Changed to a real link -->
-                <li><button class="signup-btn">Sign Up</button></li> <!-- Changed to button -->
+                <li><a href="/" aria-label="Go to Home Page">Home</a></li>
+                <li><a href="/login" aria-label="Go to Login Page">Login</a></li>
+                <li><a href="/signup" class="signup-btn" role="button" aria-label="Sign Up">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content Section -->
-    <section>
-        <h2>Welcome to Quenga's Downloader</h2>
-        <p>Browse through our collection of emulators, games, and more!</p>
+    <main>
+        <section aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome to Quenga's Downloader</h2>
+            <p>Browse through our collection of emulators, games, and more!</p>
 
-        <!-- Search Bar -->
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Search for emulators, games, tools..." />
-            <button type="button" id="search-btn">Search</button>
-        </div>
+            <!-- Search Bar -->
+            <form class="search-container" role="search" aria-label="Search for content">
+                <label for="search" class="visually-hidden">Search</label>
+                <input type="text" id="search" name="query" placeholder="Search for emulators, games, tools..." />
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+        </section>
 
         <!-- Categories Section -->
-        <div class="category-grid">
-            <div class="category-item">
-                <h3>Emulators</h3>
-                <p>Play classic games on your modern device.</p>
+        <section aria-labelledby="categories-heading">
+            <h2 id="categories-heading">Categories</h2>
+            <div class="category-grid">
+                <article class="category-item" aria-labelledby="emulators-heading">
+                    <h3 id="emulators-heading">Emulators</h3>
+                    <p>Play classic games on your modern device.</p>
+                </article>
+                <article class="category-item" aria-labelledby="games-heading">
+                    <h3 id="games-heading">Games</h3>
+                    <p>Find a variety of games to download and enjoy.</p>
+                </article>
+                <article class="category-item" aria-labelledby="tools-heading">
+                    <h3 id="tools-heading">Tools</h3>
+                    <p>Download useful tools for your computer.</p>
+                </article>
             </div>
-            <div class="category-item">
-                <h3>Games</h3>
-                <p>Find a variety of games to download and enjoy.</p>
-            </div>
-            <div class="category-item">
-                <h3>Tools</h3>
-                <p>Download useful tools for your computer.</p>
-            </div>
-        </div>
+        </section>
 
-        <!-- Button -->
-        <button>Start Downloading</button>
-    </section>
+        <!-- Call to Action -->
+        <section aria-labelledby="cta-heading">
+            <h2 id="cta-heading" class="visually-hidden">Call to Action</h2>
+            <button onclick="location.href='/downloads'">Start Downloading</button>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Quenga's Downloader. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
