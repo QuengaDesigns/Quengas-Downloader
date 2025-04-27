@@ -1,43 +1,12 @@
-.signup-btn {
-    font-size: 1.25rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    cursor: pointer;
-    border: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    transition: transform 0.2s ease, background-color 0.3s ease;
-}
-
-.signup-btn:hover {
-    transform: translateY(-3px);
-    background-color: var(--hover-color);
-}
-.signup-btn {/* Define CSS Variables */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}    background-color: var(--hover-color); /* Slight hover effect */    transform: translateY(-3px);.signup-btn:hover {}    transition: transform 0.2s ease, background-color 0.3s ease;    color: #fff;    background-color: var(--primary-color); /* e74c3c */    border: none;    cursor: pointer;    font-weight: 500;    border-radius: 0.5rem;    padding: 0.5rem 1rem;    font-size: 1rem;:root {
+/* Define CSS Variables */
+:root {
     --primary-color: #e74c3c;
     --secondary-color: #f39c12;
     --background-light: #ffffff;
     --background-dark: #f4f4f9;
     --text-color: #333333;
     --focus-color: #3498db;
-    --hover-color: #2ecc71; /* Added hover color for better interactivity */
+    --hover-color: #2ecc71;
 }
 
 /* Import Google Fonts */
@@ -183,7 +152,7 @@ p {
 }
 
 /* Call to Action Button */
-button {
+button, .signup-btn {
     font-size: 1.25rem;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
@@ -195,7 +164,7 @@ button {
     transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-button:hover {
+button:hover, .signup-btn:hover {
     transform: translateY(-3px);
     background-color: var(--hover-color);
 }
