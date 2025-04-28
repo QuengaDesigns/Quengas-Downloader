@@ -2,46 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quenga's Downloader</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="logo-text">QD</div>
-        <h1>Quenga's Downloader</h1>
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Log In</a>
-            <a href="#" class="signup">Sign Up</a>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>QD</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li><a href="#" class="register-btn"><i class="fas fa-user-plus"></i> Register</a></li>
+            </ul>
         </nav>
     </header>
-    <p>Upload is only available on a server. For GitHub Pages, add files to the <code>/downloads</code> folder in the repo.</p>
-    
-    <section>
-        <h2>Video Games by Platform</h2>
-        <ul id="games-list">
-            <!-- Example: <li><a href="downloads/game1.zip" download>Game 1 (PC)</a></li> -->
-        </ul>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Quenga's Downloader</h1>
+        <p>Your go-to spot for downloading emulators and games!</p>
     </section>
-    <section>
-        <h2>Emulators</h2>
-        <ul id="emulators-list">
-            <!-- Example: <li><a href="downloads/emulator1.zip" download>Emulator 1</a></li> -->
-        </ul>
+
+    <!-- Platforms Section -->
+    <section class="platforms">
+        <h2>Platforms</h2>
+        <div class="platforms-list">
+            <div class="platform">
+                <img src="assets/images/Sony PS1 - Model 1.ico" alt="PlayStation 1">
+                <h3>PlayStation 1</h3>
+                <p>152 Games</p>
+                <div class="browse-section">
+                    <a href="playstation1.html">Browse</a>
+                </div>
+            </div>
+            <div class="platform">
+                <img src="assets/images/nintendo.png" alt="Nintendo">
+                <h3>Nintendo</h3>
+                <p>98 Games</p>
+                <div class="browse-section">
+                    <a href="#">Browse</a>
+                </div>
+            </div>
+            <div class="platform">
+                <img src="assets/images/sega.png" alt="Sega">
+                <h3>Sega</h3>
+                <p>43 Games</p>
+                <div class="browse-section">
+                    <a href="#">Browse</a>
+                </div>
+            </div>
+            <div class="platform">
+                <img src="assets/images/xbox.png" alt="Xbox">
+                <h3>Xbox</h3>
+                <p>77 Games</p>
+                <div class="browse-section">
+                    <a href="#">Browse</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Software</h2>
-        <ul id="software-list">
-            <!-- Example: <li><a href="downloads/software1.zip" download>Software 1</a></li> -->
-        </ul>
-    </section>
-    <!-- Add more categories as needed -->
-    <script>
-    // Example: populate lists if you want to automate
-    // const games = [ { name: "Game 1 (PC)", url: "downloads/game1.zip" } ];
-    // const emulators = [ { name: "Emulator 1", url: "downloads/emulator1.zip" } ];
-    // const software = [ { name: "Software 1", url: "downloads/software1.zip" } ];
-    // ...populate lists as needed...
-    </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Quenga's Downloader</p>
+        <p><a href="#">Contact</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
 </body>
 </html>
